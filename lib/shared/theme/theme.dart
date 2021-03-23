@@ -20,6 +20,7 @@ class AppTheme {
 
   /// Other color's
   static Color background = Color(0xFFFAFAFC);
+  static Color backgroundDark = Color(0xFF121214);
 
   /// Init `theme data` from application
   static ThemeData light(BuildContext context) {
@@ -36,6 +37,22 @@ class AppTheme {
       textTheme: _textTheme(context),
     );
   }
+
+  /// Init `theme dark data` from application
+  static ThemeData dark(BuildContext context) {
+    return Theme.of(context).copyWith(
+      brightness: Brightness.dark,
+      primaryColor: primary,
+      primaryColorDark: primaryDark,
+      primaryColorLight: primaryLight,
+      scaffoldBackgroundColor: backgroundDark,
+      dialogBackgroundColor: backgroundDark,
+      backgroundColor: backgroundDark,
+      appBarTheme: _appBarTheme(context),
+      textTheme: _textTheme(context),
+    );
+  }
+
 
   static AppBarTheme? _appBarTheme(BuildContext context) {
     return AppBarTheme(
