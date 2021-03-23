@@ -1,5 +1,5 @@
 name: getx_clean
-description:
+description: Change description
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -17,6 +17,8 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
+  # Package para mock's nos testes
+  mocktail: ^0.1.1
   flutter_test:
     sdk: flutter
 

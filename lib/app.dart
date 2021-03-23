@@ -21,12 +21,11 @@ class App extends StatelessWidget {
           getPages: Navigation.routes,
           theme: AppTheme.light(context),
           darkTheme: AppTheme.dark(context),
-          themeMode: ThemeMode.light,
           builder: (context, child) => GestureDetector(
-            behavior: HitTestBehavior.opaque,
             onTap: () {
               FocusManager.instance.primaryFocus?.unfocus();
             },
+            behavior: HitTestBehavior.opaque,
             child: child,
           ),
         );
