@@ -18,7 +18,7 @@ Como iniciar o padrão de projeto:
 ``^2.0.1``
 > Package usado para gerenciar os arquivos locais (local storage)
 
-* [Flutter Screen Util](https://pub.dev/packages/flutter_screenutil)
+* [Flutter ScreenUtil](https://pub.dev/packages/flutter_screenutil)
 ``^5.0.0-nullsafety.11``
 > Package usado para responsividade ()
 
